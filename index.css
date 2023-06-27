@@ -318,11 +318,10 @@ text-align: center;
   
 }
 .miembros h2{
-  font-size: 24px;
-  color: #423f3f;
+  color:  rgba(134, 61, 22, 0.753);
   margin-bottom: 20px;
   font-family: 'Kanit', sans-serif;
-  font-size: 48px;
+  font-size: 100px;
   text-align: center;
 
 }
@@ -449,7 +448,7 @@ text-align: center;
    }
    .videos-section  h2 {
       font-size: 24px;
-      color: #423f3f;
+      color:  rgba(134, 61, 22, 0.753);
       margin-bottom: 20px;
       font-family: 'Kanit', sans-serif;
       font-size: 120px;
