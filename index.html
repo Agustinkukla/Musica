@@ -18,9 +18,10 @@
     
       
       <section class="inicio">
+        
         <div class="content"  >
           
-          <img src="logo2-removebg-preview.png" class="guitarra">
+          <img src="logito-removebg-preview.png" class="guitarra">
           <h1>MI.AL.MA.</h1>
           
         </div>
@@ -28,12 +29,28 @@
         
          
           <div class="flechita">
-            <a class="fle" href="#miembros"><div class="arrow" onclick="deslizar"></div></a>
+            <a class="fle" href="#frase"><div class="arrow" onclick="deslizar(event)"></div></a>
           </div>
           
         
       </section>
+      <section class="frase" id="frase">
+        <div class="frase-container">
+          <h2 class="frase-texto">
+            <span class="comilla">"</span>
+            Que triste ha de ser morirse y no volver nunca más.<br>
+            Pero es tan linda la vida."
+            <span class="comilla">"</span>
+          </h2>
+        </div>
+        <div class="flecha-container">
+          <a href="#miembros">
+            <div class="arrow3" onclick="deslizar"></div>
+          </a>
+        </div>
+      </section>
       <section class="miembros" >
+        
         <h2 id="miembros">Miembros</h2>
         <div class="box">
           
@@ -42,7 +59,7 @@
                   <img src="pe.jfif" alt="images">
               </div>
               <div class="details">
-                  <h2>Raul Gutierrez<br><span>Director</span></h2>
+                  <h2>Alberto Acuña<br><span>Primera guitarra</span></h2>
               </div>
             </div>
           
@@ -51,7 +68,7 @@
                   <img src="Miguel.jfif" alt="images">
                </div>
                <div class="details">
-                  <h2>Miguel Kukla<br><span>Cantante</span></h2>
+                  <h2>Miguel Kukla<br><span>Voz y Guitarra ritmica</span></h2>
                 </div>
              </div>
       
@@ -60,7 +77,7 @@
                   <img src="fua.jfif" alt="images">
                </div>
                <div class="details">
-                  <h2>Luis Miguel<br><span>compositor</span></h2>
+                  <h2>Mario Avila<br><span>Percusion</span></h2>
                 </div>
              </div>
              
@@ -103,17 +120,16 @@
           <footer>
             <div class="cont">
               <div class="contact-info">
-                <div class="email">Correo: ku.miguel@hotmail.com.ar</div>
+                <div class="email">Correo: kuklamiguel@hotmail.com</div>
                 <div class="phone">Teléfono: 1162122451</div>
               </div>
               <div class="social-media">
                 <a href="https://www.youtube.com/@MiguelKukla" target="_blank" class="link">Canal de YouTube: Miguel Kukla</a>
-                <a href="https://www.facebook.com/your-facebook" target="_blank" class="link">Facebook: Miguel Kukla</a>
               </div>
             </div>
           </footer>
       
-      <script href="index.js"></script>
+      <script src="index.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </body>
      

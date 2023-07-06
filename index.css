@@ -25,6 +25,7 @@ body {
   h1 {
     font-size: 30px;
     margin-left: 0;
+    
   }
   /*Miembros*/
   .miembros h2 {
@@ -100,6 +101,9 @@ body {
 * {
   box-sizing: border-box;
 }
+.frase {
+  font-size: 50px;
+}
 body {
   margin: 0;
   padding: 0;
@@ -110,7 +114,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 110vh;
+  height: 105vh;
   background-image: url(fondochama.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -147,7 +151,11 @@ body {
   height: 420px;
   border-radius: 40px;
 }
-
+.content img{
+  width: 200px;
+  height: 200px;
+  margin-top: -0cm;
+}
 h1 {
   
   font-size: 70px; /* Establece el tamaño de fuente del encabezado h1 a 60 píxeles */
@@ -156,6 +164,7 @@ h1 {
   cursor: default; /* Establece el cursor del elemento como el predeterminado */
   font-family: 'Tilt Prism', cursive;
   margin-left: 10px;
+  margin-top: -0.2cm;
   
   
 }
@@ -253,7 +262,7 @@ bottom: 50px;
   height: 100%;
   border-width: .8vmin .8vmin 0 0;
   border-style: solid;
-  border-color: #1a1414;
+  border-color: #070505;
   transition: .2s ease;
   display: block;
   transform-origin: 100% 0; /* Cambiado a% 0% */
@@ -294,8 +303,88 @@ text-align: center;
 
 
 }
-  
 
+  
+/*frase*/
+.frase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1f1813;
+  position: relative;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.frase-container {
+  text-align: center;
+}
+
+.frase-texto {
+  color: rgba(134, 61, 22, 0.753);
+  font-family: 'Kanit', sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+.flecha-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow3 {
+  width: 6vmin;
+  height: 6vmin;
+  position: relative;
+  transform: rotate(135deg);
+  bottom: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-width: 0.8vmin 0.8vmin 0 0;
+    border-style: solid;
+    border-color: #1a1414;
+    transition: 0.2s ease;
+    display: block;
+    transform-origin: 100% 0;
+  }
+
+  &::after {
+    content: "";
+    float: left;
+    position: relative;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    border-width: 0 0.8vmin 0 0;
+    border-style: solid;
+    border-color: #1a1414;
+    transform-origin: 100% 0;
+    transition: 0.2s ease;
+  }
+
+  &:hover::after {
+    transform: rotate(45deg);
+    border-color: orange;
+    height: 120%;
+  }
+
+  &:hover::before {
+    border-color: orange;
+    transform: scale(0.8);
+  }
+}
+.comilla {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
   
   
 /*Miembros*/
@@ -314,6 +403,7 @@ text-align: center;
   height: auto;
   position: relative;
   flex-direction: column;
+  height: 140vh;
   
   
 }
